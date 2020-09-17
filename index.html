@@ -5,9 +5,38 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+    <div id="carousel" class="carousel">
+
+        <ul class="slides">
+            <li class="slides__item active"><a href="#">Slide 1</a></li>
+            <li class="slides__item"><a href="#">Slide 2</a></li>
+            <li class="slides__item"><a href="#">Slide 3</a></li>
+            <li class="slides__item"><a href="#">Slide 4</a></li>
+            <li class="slides__item"><a href="#">Slide 5</a></li>
+        </ul>
+
+        <div class="indicators">
+            <span class="indicators__item active" data-slide-to="0"></span>
+            <span class="indicators__item" data-slide-to="1"></span>
+            <span class="indicators__item" data-slide-to="2"></span>
+            <span class="indicators__item" data-slide-to="3"></span>
+            <span class="indicators__item" data-slide-to="4"></span>
+        </div>
+
+        <div class="controls">
+            <div class="controls__item controls__prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="controls__item controls__next"><i class="fas fa-chevron-right"></i></div>
+            <div class="controls__item controls__pause"><i class="fas fa-play"></i></div>
+        </div>
+
+    </div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
